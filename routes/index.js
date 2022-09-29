@@ -7,19 +7,19 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/aboutme", function (req, res, next) {
-  res.render("aboutme");
+  res.render("aboutme", { title: "About Me" });
 });
 
 router.get("/contact", function (req, res, next) {
-  res.render("contact");
+  res.render("contact", { title: "Contact" });
 });
 
 router.get("/project", function (req, res, next) {
-  res.render("project");
+  res.render("project", { title: "My Project" });
 });
 
 router.get("/services", function (req, res, next) {
-  res.render("services");
+  res.render("services", { title: "My services" });
 });
 
 router.post("/contact", function (req, res, next) {
