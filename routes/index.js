@@ -1,9 +1,16 @@
+// index.js
+// Threepat Kiatkamol
+// 301207863 
+// 29 September 2022
+
 var express = require("express");
 var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "My Portfolio" });
+  res.render("index", { title: "My Portfolio" }
+  )
+  ;
 });
 
 router.get("/aboutme", function (req, res, next) {
